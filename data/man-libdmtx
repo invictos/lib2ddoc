@@ -1,0 +1,64 @@
+DECODING - Reading Data Matrix Barcodes
+       Barcode reading takes more steps than barcode generation, mainly because libdmtx must find a barcode region before it can decode the message. However, this
+       too is a relatively simple process that uses 4 main structures:
+
+       DmtxImage holds image properties and a pointer to pixel data held by the calling program.
+
+       DmtxDecode  holds values for controlling decode behavior and tracking scan progress. When scanning a new image, calling programs should always create a new
+       DmtxDecode structure instead of reusing an old one.
+
+       DmtxRegion defines a 4-sided region in pixel coordinates. Regions may be found in almost any orientation, and their corners won't  necessarily  form  right
+       angles. libdmtx uses this structure to store the location of potential barcodes, which are then returned to the calling program one-at-a-time.
+
+       DmtxMessage holds the decoded message after being extracted from the barcode region. A successfully decoded region will produce exactly one message.
+
+       Use the following functions to find and decode Data Matrix barcodes:
+
+       1. Call dmtxImageCreate()
+
+       Creates  and initializes a new DmtxImage structure using pixel data provided by the calling application. Parameters include a pointer to the existing pixel
+       array, image width, height, and the pixel packing format.
+
+       2. Call dmtxImageSetProp() [optional]
+
+       Sets image properties to control the pixel mapping logic. These settings allow libdmtx to understand many native in-memory image layouts,  thus  preventing
+       the  extra  work of transforming and copying data to a one-size-fits-all format. A dmtxDecodeGetProp() function is also available for detecting the current
+       image properties.
+
+       3. Call dmtxDecodeCreate()
+
+       Creates and initializes a new DmtxDecode struct, which designates the image to be scanned and initializes the scan grid  pattern.  This  function  must  be
+       called before any other scanning functions.
+
+       4. Call dmtxDecodeSetProp() [optional]
+
+       Sets  internal  properties  to  control  decoding  behavior.  This feature allows you to optimize performance and accuracy for specific image conditions. A
+       dmtxDecodeGetProp() function is also available.
+
+       5. Call dmtxRegionFindNext()
+
+       Searches every pixel location in a grid pattern looking for potential barcode regions. A DmtxRegion is returned whenever  a  potential  barcode  region  is
+       found, or if the final pixel location has been scanned. Subsequent calls to this function will resume the search where the previous call left off.
+
+       6. Call either dmtxDecodeMatrixRegion() or dmtxDecodeMosaicRegion()
+
+       Extracts raw data from the barcode region and decodes the underlying message.
+
+       7. Call dmtxMessageDestroy()
+
+       Releases  memory  held  by  a  DmtxMessage struct. The complementary function, dmtxMessageCreate(), is automatically called by dmtxDecodeMatrixRegion() and
+       therefore is not normally used by the calling program.
+
+       8. Call dmtxRegionDestroy()
+
+       Releases memory held by a DmtxRegion struct. The complementary function, dmtxRegionCreate(), is  automatically  called  by  dmtxRegionFindNext()  (actually
+       dmtxRegionScanPixel()) and therefore is not normally used by the calling program.
+
+       9. Call dmtxDecodeDestroy()
+
+       Releases memory held by a DmtxDecode struct. This is the complementary function to dmtxDecodeCreate().
+
+       10. Call dmtxImageDestroy()
+
+       Releases  memory  held  by  a DmtxImage struct, excluding the pixel array passed to dmtxImageCreate(). The calling program is responsible for releasing the
+       pixel array memory, if required.
