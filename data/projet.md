@@ -64,3 +64,5 @@ fn main() {
     println!("max compressed length of a 100 byte buffer: {}", x);
 }
 ```
+
+![02](asset/FFI.svg)
