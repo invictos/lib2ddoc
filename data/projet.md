@@ -66,3 +66,15 @@ fn main() {
 ```
 
 ![02](asset/FFI.svg)
+
+## Problématiques
+1. Headers sont fixes, sans mot clé, seule info: taille
+    - Pas de syntaxe. On connait juste la taille
+
+2. Pour parser un couple Message(ID, donnée), il faut des infos lié a la doc ( soit fct(ID) ): taille min, taille max
+    - Implémentation de f(ID):
+        a)Une fonction par ID ( via generation automatique du code ) => code dupliqué, gros binaire
+        b)fct(ID) via Hashmap (Hashmap ajouté a la lib au moment du build)
+    - Validité du 2D-Doc (champ obligatoire, facultatif, interdit: fct(header(' type de document ')))
+    
+3. Signature sur entête + messages => Verifier avant de decoder
