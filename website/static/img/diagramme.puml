@@ -1,0 +1,34 @@
+@startuml
+Field o-- FieldSpecification
+FieldSpecification "*" *-- FieldSpecificationStore
+FieldSpecificationStore <.. FieldSpecificationStoreLoader: @build
+FieldSpecificationStoreLoader o-- FieldSpecificationStoreBuilder
+
+Document o-- DocumentSpecification
+DocumentSpecification "*" *-- DocumentSpecificationStore
+DocumentSpecificationStore <.. DocumentSpecificationStoreLoader: @build
+DocumentSpecificationStoreLoader o-- DocumentSpecificationStoreBuilder
+
+
+interface Validable{
+ is_valid()
+}
+Validable <-- Field
+Validable <-- Document
+
+interface Validator{
+ validate(&str)
+}
+Validator <-- FieldSpecification
+Validator <-- DocumentSpecification
+
+class FieldSpecificationStore{
+ FieldSpecificationStore load()
+ FieldSpecification get(id: &str)
+}
+
+class DocumentSpecificationStore{
+ DocumentSpecificationStore load()
+ DocumentSpecification get(id: &str)
+}
+@enduml

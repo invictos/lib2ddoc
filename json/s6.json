@@ -1,0 +1,202 @@
+{
+    "10": {
+        "type": "Justificatif d’emploi",
+        "date_emission": true,
+        "description": "Contrat de travail"
+    },
+    "11": {
+        "type": "Justificatif de ressources",
+        "date_emission": true,
+        "description": "Relevé de compte"
+    },
+    "12": {
+        "type": "Justificatif juridique/judiciaire",
+        "date_emission": true,
+        "description": "Acte d’huissier"
+    },
+    "13": {
+        "type": "Justificatif d’identité",
+        "date_emission": true,
+        "description": "Document étranger"
+    },
+    "14": {
+        "type": "Justificatif de véhicule",
+        "date_emission": true,
+        "description": "Attestation DICEM"
+    },
+    "15": {
+        "type": "Justificatif d’emploi",
+        "date_emission": true,
+        "description": "Attestation de décision favorable d'une demande d'autorisation de travail"
+    },
+    "16": {
+        "type": "Justificatif d’Asile",
+        "date_emission": false,
+        "description": "Attestation de Demande d’Asile"
+    },
+    "00": {
+        "type": "Justificatif de domicile",
+        "date_emission": true,
+        "description": "Document émis spécifiquement pour servir de justificatif de domicile."
+    },
+    "01": {
+        "type": "Justificatif de domicile",
+        "date_emission": true,
+        "description": "Factures de fournisseur d’énergie\nFactures de téléphonie\nFactures de fournisseur d’accès internet\nFactures de fournisseur d’eau"
+    },
+    "02": {
+        "type": "Justificatif de domicile",
+        "date_emission": true,
+        "description": "Avis de taxe d’habitation"
+    },
+    "03": {
+        "type": "Justificatif de domiciliation bancaire",
+        "date_emission": false,
+        "description": "Relevé d’identité bancaire."
+    },
+    "05": {
+        "type": "Justificatif de domiciliation bancaire",
+        "date_emission": false,
+        "description": "Relevé d’Identité SEPAmail"
+    },
+    "04": {
+        "type": "Justificatif de ressources",
+        "date_emission": true,
+        "description": "Avis d’impôt sur le revenu"
+    },
+    "06": {
+        "type": "Justificatif de ressources",
+        "date_emission": true,
+        "description": "Bulletin de salaire"
+    },
+    "07": {
+        "type": "Justificatif d’identité",
+        "date_emission": true,
+        "description": "Titre d’identité"
+    },
+    "08": {
+        "type": "Justificatif d’identité",
+        "date_emission": true,
+        "description": "MRZ"
+    },
+    "09": {
+        "type": "Justificatif fiscal",
+        "date_emission": true,
+        "description": "Facture étendue"
+    },
+    "A0": {
+        "type": "Justificatif de véhicule",
+        "date_emission": true,
+        "description": "Certificat de qualité de l’air"
+    },
+    "A7": {
+        "type": "Justificatif de véhicule",
+        "date_emission": true,
+        "description": "Certificat de qualité de l’air (V2)"
+    },
+    "A1": {
+        "type": "Justificatif permis de conduire",
+        "date_emission": true,
+        "description": "Courrier Permis à Points"
+    },
+    "AA": {
+        "type": "Justificatif permis de conduire",
+        "date_emission": true,
+        "description": "Arrêtés Permis de conduire"
+    },
+    "AB": {
+        "type": "Justificatif permis de conduire",
+        "date_emission": false,
+        "description": "Relevé d’Information Permis de conduire"
+    },
+    "A2": {
+        "type": "Justificatif de santé",
+        "date_emission": true,
+        "description": "Carte Mobilité Inclusion (CMI)"
+    },
+    "A3": {
+        "type": "Justificatif d’activité",
+        "date_emission": false,
+        "description": "Macaron VTC (Véhicule de Transport avec Chauffeur)"
+    },
+    "A5": {
+        "type": "Justificatif d’activité",
+        "date_emission": false,
+        "description": "Carte T3P (Transport Public Particulier de Personnes)"
+    },
+    "A6": {
+        "type": "Justificatif d’activité",
+        "date_emission": false,
+        "description": "Carte Professionnelle Sapeur-Pompier"
+    },
+    "A9": {
+        "type": "Justificatif d’activité",
+        "date_emission": true,
+        "description": "Permis de chasser"
+    },
+    "AC": {
+        "type": "Justificatif d’activité",
+        "date_emission": true,
+        "description": "Licence de conducteur de train"
+    },
+    "A4": {
+        "type": "Justificatif médical",
+        "date_emission": true,
+        "description": "Certificat de décès"
+    },
+    "B0": {
+        "type": "Justificatif académique",
+        "date_emission": true,
+        "description": "Diplôme"
+    },
+    "B1": {
+        "type": "Justificatif académique",
+        "date_emission": true,
+        "description": "Attestation de Versement de la Contribution à la Vie Etudiante"
+    },
+    "A8": {
+        "type": "Certificat d’immatriculation",
+        "date_emission": true,
+        "description": "Certificat de cession électronique"
+    },
+    "C1": {
+        "type": "Autorisations douanières",
+        "date_emission": true,
+        "description": "Renseignement Tarifaire Contraignant"
+    },
+    "C2": {
+        "type": "Autorisations douanières",
+        "date_emission": true,
+        "description": "Accord Préalable pour le transfert d’armes"
+    },
+    "C3": {
+        "type": "Autorisations douanières",
+        "date_emission": true,
+        "description": "Permis de transfert d’armes à feu et de munitions"
+    },
+    "C4": {
+        "type": "Autorisations douanières",
+        "date_emission": true,
+        "description": "Autorisation d’importation de matériels de guerre"
+    },
+    "C5": {
+        "type": "Autorisations douanières",
+        "date_emission": true,
+        "description": "Licence d’exportation d’armes à feu"
+    },
+    "C6": {
+        "type": "Autorisations douanières",
+        "date_emission": true,
+        "description": "Agrément de transfert d’armes à feu et de munitions"
+    },
+    "B2": {
+        "type": "Résultats des tests virologiques",
+        "date_emission": true,
+        "description": "Test COVID"
+    },
+    "L1": {
+        "type": "Attestation Vaccinale",
+        "date_emission": true,
+        "description": "Attestation Vaccinale"
+    }
+}
