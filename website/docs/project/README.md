@@ -1,6 +1,6 @@
 # 📖 README
 
-![02](/website/static/img/images/01-v2.png)
+![02](/img/images/01-v2.png)
 
 ## 🚀 Introduction
 
@@ -42,15 +42,3 @@ cd website
 npm run build
 npm run serve
 ```
-
-## Crédits
-
-2021, Insa Rouen Normandie
-
-Par **Yassine BenAbderrahmane**, **Antoine Camusat**, **Florin Croitoru**
-
-Encadrement par Mr **Romain Hérault**
-
-## Licence
-
-Licensed under either of Apache License, Version 2.0 or MIT license at your option.

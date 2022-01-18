@@ -1,0 +1,17 @@
+image: node:15.12-alpine3.13
+
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  script:
+  - cd website
+  - yarn install
+  - yarn build
+  - mv ./build ../public
+  artifacts:
+    paths:
+    - public
+  only:
+    - master
