@@ -4,7 +4,7 @@
 
 ## 🚀 Introduction
 
-[**📚 documentation**](http://acamusat.pages.insa-rouen.fr/lib2ddoc/)
+[**📚 documentation**](http://invictos.github.io/lib2ddoc/)
 
 `FR` Le 2D-DOC est une spécification de datamatrix permettant à l’administration française d’embarquer des informations certifiés dans un document papier.
 On peut citer comme exemple les justificatifs de domiciles ou les attestations vaccinales.
@@ -34,7 +34,7 @@ Cargo va créer une librairie **.rlib** et **.so** dans le dossier `target/`
 ```cargo build --release```
 
 ## 📚 Documentation
-[Une documentation complète est disponible **ici**](http://acamusat.pages.insa-rouen.fr/lib2ddoc/)
+[Une documentation complète est disponible **ici**](http://invictos.github.io/lib2ddoc/)
 
 On détaille le projet, les spécifications 2DDoc, l'implémentation et les modules externes utilisés
 ```
