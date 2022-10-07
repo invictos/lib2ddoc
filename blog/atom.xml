@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://pages.gitlab.io/lib2ddoc/blog</id>
+    <title>Lib2D-Doc Blog</title>
+    <updated>2022-01-18T22:12:43.690Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://pages.gitlab.io/lib2ddoc/blog"/>
+    <subtitle>Lib2D-Doc Blog</subtitle>
+    <icon>https://pages.gitlab.io/lib2ddoc/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Introduction]]></title>
+        <id>/</id>
+        <link href="https://pages.gitlab.io/lib2ddoc/blog/"/>
+        <updated>2022-01-18T22:12:43.690Z</updated>
+        <summary type="html"><![CDATA[Le 2D-DOC est une spécification de datamatrix permettant à l’administration française d’embarquer des informations certifiés dans un document papier.]]></summary>
+        <content type="html"><![CDATA[<p>Le 2D-DOC est une spécification de datamatrix permettant à l’administration française d’embarquer des informations certifiés dans un document papier.
+On peut citer comme exemple les justificatifs de domiciles ou les attestations vaccinales.
+Le but de cette PAO est de créer une librairie en rust permettant d’interpréter le flux d’octets provenant d’un datamatrix en données structurées suivant les
+spécifications de 2D-DOC.</p>]]></content>
+    </entry>
+</feed>
